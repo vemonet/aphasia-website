@@ -3,14 +3,21 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css?family=Montserrat,Open+Sans");
 
-// Custom font
+// Custom font (font-size, line-height and font-weight) https://material.angular.io/guide/typography
 @import '~@angular/material/theming';
 $custom-typography: mat-typography-config(
-  $font-family: 'Open Sans'
+  $font-family: 'Open Sans',
+  $headline: mat-typography-level(38px, 60px, 100),
+  $body-1: mat-typography-level(24px, 38px, 100)
 );
 @include angular-material-typography($custom-typography);
 
 // Remove global margin of the page
 body {
     margin: 0;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
 }
