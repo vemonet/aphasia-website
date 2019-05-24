@@ -1,8 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Montserrat,Open+Sans");
 
+// Custom font
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config(
+  $font-family: 'Open Sans'
+);
+@include angular-material-typography($custom-typography);
 
+// Remove global margin of the page
 body {
     margin: 0;
 }
