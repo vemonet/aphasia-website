@@ -5,7 +5,10 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/" i18n="navigation | home button@@homeButton">Home</a>
+      <a mat-list-item routerLink="/" i18n="navigation | home button@@homeButton">
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span mat-line>Home</span>
+      </a>
       <a mat-list-item routerLink="/about" i18n="navigation | about button@@aboutButton">About</a>
       <a mat-list-item routerLink="/donate" i18n="navigation | donate button@@donateButton">Donate</a>
       <a mat-list-item routerLink="/contact" i18n="navigation | about button@@contactButton">Contact</a>
