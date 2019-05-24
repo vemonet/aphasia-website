@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   safeURL: any;
 
   constructor(private _sanitizer: DomSanitizer) {
-    this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl('http://www.youtube.com/embed/-GsVhbmecJA?autoplay=1');
+    this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl('http://www.youtube.com/embed/-GsVhbmecJA?autoplay=0');
   }
 
   ngOnInit() {
