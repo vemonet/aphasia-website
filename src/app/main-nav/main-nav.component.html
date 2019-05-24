@@ -25,6 +25,10 @@
         <mat-icon mat-list-icon>http</mat-icon>
         <span mat-line>API</span>
       </a>
+      <a mat-list-item routerLink="/account" i18n="navigation | account button@@accountButton">
+        <mat-icon mat-list-icon>account_circle</mat-icon>
+        <span mat-line>{{user ? 'Logged in' : 'Sign in'}}</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content fxLayout="column">
