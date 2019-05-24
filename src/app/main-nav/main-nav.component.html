@@ -27,7 +27,7 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content fxLayout="column">
     <mat-toolbar color="primary">
       <button
         type="button"
@@ -41,5 +41,6 @@
     </mat-toolbar>
     <!-- To be able to put the content in <app-main-nav> in app.component.html -->
     <ng-content></ng-content>
+    <app-footer class="mat-typography" fxFlexOffset="auto"></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
