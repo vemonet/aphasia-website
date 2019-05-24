@@ -9,9 +9,22 @@
         <mat-icon mat-list-icon>home</mat-icon>
         <span mat-line>Home</span>
       </a>
-      <a mat-list-item routerLink="/about" i18n="navigation | about button@@aboutButton">About</a>
-      <a mat-list-item routerLink="/donate" i18n="navigation | donate button@@donateButton">Donate</a>
-      <a mat-list-item routerLink="/contact" i18n="navigation | about button@@contactButton">Contact</a>
+      <a mat-list-item routerLink="/about" i18n="navigation | about button@@aboutButton">
+        <mat-icon mat-list-icon>info</mat-icon>
+        <span mat-line>About</span>
+      </a>
+      <a mat-list-item routerLink="/donate" i18n="navigation | donate button@@donateButton">
+        <mat-icon mat-list-icon>monetization_on</mat-icon>
+        <span mat-line>Donate</span>
+      </a>
+      <a mat-list-item routerLink="/contact" i18n="navigation | about button@@contactButton">
+        <mat-icon mat-list-icon>email</mat-icon>
+        <span mat-line>Contact</span>
+      </a>
+      <a mat-list-item href="/swagger-ui.html" i18n="navigation | api button@@apiButton">
+        <mat-icon mat-list-icon>http</mat-icon>
+        <span mat-line>API</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
