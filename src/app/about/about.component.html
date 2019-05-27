@@ -1,23 +1,52 @@
 <div fxLayout="row" fxLayoutAlign="center">
-  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="2.5%">
+  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="2.5%" style="text-align: center;">
     <h1>Foundation Aphasia Help</h1>
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
+
+    <div fxLayout="row" fxLayoutGap="2.5%" style="text-align: center;">
+      <mat-card fxFlex="50%" >
+        <mat-card-header fxLayout="column">
+          <mat-card-title>
+            <h1>One team</h1>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img class="img" src="/assets/images/team.png" alt="the team" height="240px"> 
+        </mat-card-content>
+      </mat-card>
+      <mat-card fxFlex="50%">
+        <mat-card-header fxLayout="column">
+          <mat-card-title>
+            <h1>One mission</h1>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Mission of Aphasia Help is to promote public awareness and understanding of aphasia and provide support to all persons with aphasia and their caregivers.
+
+            The ApHe envisions a society in which aphasia is a commonly understood word and where all persons with aphasia, regardless of individual differences,
+            their families, health professionals, and the public have access to appropriate education and resources that would enhance their potential 
+            for an acceptable quality of life.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <mat-card fxLayout="column" style="text-align: center;">
+      <mat-card-header fxLayout="column">
         <mat-card-title>
-          <h1>One team, one mission</h1>
+          <h1>Developed with and by the opensource community</h1>
         </mat-card-title>
       </mat-card-header>
-      <img mat-card-image class="img" src="/assets/images/team.png" alt="the team"> 
-      <mat-card-content>
-          <p>
-              The Mission of Aphasia Help is to promote public awareness and understanding of aphasia and provide support to all persons with aphasia and their caregivers.
-
-              The ApHe envisions a society in which aphasia is a commonly understood word and where all persons with aphasia, regardless of individual differences,
-              their families, health professionals, and the public have access to appropriate education and resources that would enhance their potential 
-              for an acceptable quality of life.
-          </p>
+      <mat-card-content fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2.5%">
+        <a href="//angularjs.org" class="m-2 text-secondary"><img src="/assets/images/angular.png" height="75px"></a>
+        <a href="//swagger.io" class="m-2 text-secondary"><img src="/assets/images/swagger.png" height="75px"></a>
+        <a href="//openapis.org" class="m-2 text-secondary"><img src="/assets/images/oai.png" height="75px"></a>
+        <a href="//spring.io" class="m-2 text-secondary"><img src="/assets/images/spring.png" height="75px"></a>
+        <a href="//www.postgresql.org" class="m-2 text-secondary"><img src="/assets/images/Postgresql.png" height="75px"></a>
+        <a href="//gitlab.io" class="m-2 text-secondary"><img src="/assets/images/gitlab.png" height="75px"></a>
+        <a href="//docker.io" class="m-2 text-secondary"><img src="/assets/images/docker.png" height="75px"></a>
       </mat-card-content>
     </mat-card>
+
   </div>
 </div>
