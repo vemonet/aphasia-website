@@ -8,30 +8,8 @@ import { UserService } from '../user.service';
 })
 export class AccountComponent implements OnInit {
 
-  // dismissible = true;
-  // defaultAlerts: any[] = [
-  //   {
-  //     type: 'danger',
-  //     msg: `This website is a MVP / Prototype. We are working hard on a fully functional product. Feel free to join!`
-  //   }
-  // ];
-  // alerts = this.defaultAlerts;
-
   constructor(private user: UserService) { }
-  //constructor() { }
 
-  ngOnInit() {
-    console.log('before user init in account');
-    console.log(this.user);
-    this.user.login();
-  }
- 
-  // reset(): void {
-  //   this.alerts = this.defaultAlerts;
-  // }
- 
-  // onClosed(dismissedAlert: any): void {
-  //   this.alerts = this.alerts.filter(alert => alert !== dismissedAlert);
-  // }
+  ngOnInit() { }
 
 }

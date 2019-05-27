@@ -9,7 +9,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
-  MatCardModule, MatMenuModule } from '@angular/material';
+  MatCardModule, MatMenuModule, MatSnackBarModule } from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DonateComponent } from './donate/donate.component';
@@ -41,7 +41,8 @@ import { AccountComponent } from './account/account.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
