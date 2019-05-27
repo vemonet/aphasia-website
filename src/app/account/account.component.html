@@ -1,57 +1,56 @@
-<div class="container justify-content-center">
-  <div class="row">
-      <div class="col-md">
-      </div>
-      <div class="col-md text-center">
-        <img class="my-4" src="/assets/logo_AphasiaHelp.png" alt=""  height="200px" >
-        <div *ngIf="user.id === undefined" >
-          <h1 class="h3 mb-5 font-weight-normal" i18n="login | title"><i class="fas fa-sign-in-alt"></i> Please sign in</h1>
-          <p class="mb-5">
-            <a href="/oauth2/authorization/google" class="m-2"><img src="assets/icons/google.svg"></a>
-            <a href="/oauth2/authorization/orcid" class="m-2"><img src="assets/icons/orcid.png"></a>
-          </p>
+   <div class="container justify-content-center">
+    <div class="row">
+        <div class="col-md">
         </div>
-        <div *ngIf="user.id !== undefined" class="list-group">
-
-            <p><a href="/logout" class="btn btn-primary btn-lg btn-block">Logout</a></p>
-            
-          <div class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Username</h5>
-              </div>
-              <p class="mb-1">{{user.username}}</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">ID</h5>
-              </div>
-              <p class="mb-1">{{user.id}}</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">OpenID</h5>
-              </div>
-              <p class="mb-1">{{user.oid}}</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">OpenID Provider</h5>
-              </div>
-              <p class="mb-1">{{user.oidProvider}}</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">User type</h5>
-              </div>
-              <p class="mb-1">{{ user.scientist ? 'Scientist' : 'User'}}</p>
-            </div>
+        <div class="col-md text-center">
+          <img class="my-4" src="/assets/logo_AphasiaHelp.png" alt=""  height="200px" >
+          <div *ngIf="user === undefined" >
+            <h1 class="h3 mb-5 font-weight-normal" i18n="login | title"><i class="fas fa-sign-in-alt"></i> Please sign in</h1>
+            <p class="mb-5">
+              <a href="/oauth2/authorization/google" class="m-2"><img src="assets/icons/google.svg"></a>
+              <a href="/oauth2/authorization/orcid" class="m-2"><img src="assets/icons/orcid.png"></a>
+            </p>
           </div>
-          <p><a href="#" class="audio"><i class="fas fa-2x fa-assistive-listening-systems"></i></a></p>
+          <div *ngIf="user !== undefined" class="list-group">
+  
+              <p><a href="/logout" class="btn btn-primary btn-lg btn-block">Logout</a></p>
+              
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Username</h5>
+                </div>
+                <p class="mb-1">{{user.username}}</p>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">ID</h5>
+                </div>
+                <p class="mb-1">{{user.id}}</p>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">OpenID</h5>
+                </div>
+                <p class="mb-1">{{user.oid}}</p>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">OpenID Provider</h5>
+                </div>
+                <p class="mb-1">{{user.oidProvider}}</p>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">User type</h5>
+                </div>
+                <p class="mb-1">{{ user.scientist ? 'Scientist' : 'User'}}</p>
+              </div>
+            </div>
+            <p><a href="#" class="audio"><i class="fas fa-2x fa-assistive-listening-systems"></i></a></p>
+        </div>
+        <div class="col-md">
+        </div>
       </div>
-      <div class="col-md">
-      </div>
-    </div>
-
-    <app-footer></app-footer>
-</div>
-
+  
+      <app-footer></app-footer>
+  </div>
