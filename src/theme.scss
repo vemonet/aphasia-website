@@ -1,6 +1,6 @@
 // Theme
 // mat-palette accepts $palette-name, main, lighter and darker variants
-$my-theme-primary: mat-palette($mat-light-blue, 700, 300, 900);
+$my-theme-primary: mat-palette($mat-blue, 500, 800, 400);
 $my-theme-accent: mat-palette($mat-indigo);
 $my-theme-warn: mat-palette($mat-deep-orange, A200);
 
