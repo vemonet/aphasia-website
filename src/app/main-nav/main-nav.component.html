@@ -1,12 +1,42 @@
 <mat-toolbar color="primary" class="mat-elevation-z6">
-  <button
-    type="button"
-    aria-label="Toggle sidenav"
-    mat-icon-button
-    (click)="drawer.toggle()">
-    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  <a mat-button routerLink="/" aria-label="Aphasia Help">
+    <img class="nav-aphasia-logo"
+          src="/assets/images/logo_AphasiaHelp.svg"
+          alt="">
+  </a>
+  <a mat-button routerLink="/exercise" aria-label="Exercise">
+    <mat-icon mat-list-icon>school</mat-icon>
+    <span mat-line>Exercises</span>
+  </a>
+  <div class="flex-spacer"></div>
+  <a mat-button routerLink="/about" aria-label="About">
+    <mat-icon mat-list-icon>info</mat-icon>
+    <span mat-line>About</span>
+  </a>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon mat-list-icon>more_horiz</mat-icon>
+    <span mat-line>More</span>
   </button>
-  <span>aphasia.help</span>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/contact" aria-label="Contact">
+      <mat-icon mat-list-icon>email</mat-icon>
+      <span mat-line>Contact</span>
+    </button>
+    <button mat-menu-item routerLink="/donate" aria-label="Donate">
+      <mat-icon mat-list-icon>monetization_on</mat-icon>
+      <span mat-line>Donate</span>
+    </button>
+    <button mat-menu-item aria-label="API">
+      <a href="/swagger-ui.html">
+        <mat-icon mat-list-icon>http</mat-icon>
+        <span mat-line>API</span>
+      </a>
+    </button>
+  </mat-menu>
+  <a mat-button routerLink="/account" aria-label="Account">
+    <mat-icon mat-list-icon>account_circle</mat-icon>
+    <span mat-line>{{user ? 'Logged in' : 'Sign in'}}</span>
+  </a>
 </mat-toolbar>
   
 

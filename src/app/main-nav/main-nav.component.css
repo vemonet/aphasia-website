@@ -16,7 +16,27 @@ mat-sidenav-content .mat-toolbar.mat-primary {
   margin-bottom: 45px;
 }
 
+mat-icon {
+  margin-right: 10px;
+}
+
 span.mat-line {
   font-weight: 100 !important;
   font-size: 20px !important;
+}
+
+.nav-aphasia-logo {
+  height: 55px;
+  margin: 0 4px 3px 0;
+  vertical-align: middle;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+/* Remove special style for links */
+a {
+  text-decoration: none;
+  color: inherit;
 }
