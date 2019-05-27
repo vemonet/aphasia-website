@@ -31,13 +31,15 @@
     </div>
 
     <div *ngIf="user.id !== undefined" fxLayout="column" fxLayoutGap="3%">
+    <!-- <div fxLayout="column" fxLayoutGap="3%"> -->
       <a href="/logout" mat-raised-button color="warn">Logout</a>
         <mat-card>
         <mat-list>
           <mat-list-item>
             <mat-icon mat-list-icon>person</mat-icon>
             <span mat-line>Username</span>
-            <h2 mat-line>{{user.username</h2>
+            <h2 mat-line>{{user.id}}</h2>
+            <!-- TODO: <h2 mat-line>{{user.username}}</h2> -->
           </mat-list-item>
           <mat-list-item>
             <mat-icon mat-list-icon>assignment_turned_in</mat-icon>
