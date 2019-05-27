@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.snackBar.open('This website is a MVP / Prototype. We are working hard on a fully functional product. Feel free to join!', 'OK', {
-      duration: 2000,
+      duration: 200000,
     });
   }
 
