@@ -1,20 +1,22 @@
-<div class="container" fxLayout="column" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="2.5%" fxLayoutAlign="center" style="margin-left: 20%;margin-right: 20%;">
-  <div fxFlex="70%">
-    <mat-card class="card">
-      <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-        <h1>We help you understand Aphasia</h1>
-      </mat-card-title>
-      <mat-card-content>
-        We would love to give you a clear overview about Aphasia (brain disorder). 
-        You can find easy to understand information about the different diagnoses and forms of Aphasia. 
-        If you like you can start a self-test that will point you to the right training exercises in three simple questions. 
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <h1>Watch the video to learn more about Aphasia</h1>
-  <div fxFlex="70%">
-      <mat-card class="card" style="padding-bottom: 56.25%;">
-        <iframe [src]='safeURL' frameborder="0" allowfullscreen style="position: absolute;top: 0;left: 0;width:100%;height:100%;"></iframe>
+<div fxLayout="row" fxLayoutAlign="center">
+  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="2.5%">
+    <div>
+      <mat-card class="card">
+        <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+          <h1>We help you understand Aphasia</h1>
+        </mat-card-title>
+        <mat-card-content>
+          We would love to give you a clear overview about Aphasia (brain disorder). 
+          You can find easy to understand information about the different diagnoses and forms of Aphasia. 
+          If you like you can start a self-test that will point you to the right training exercises in three simple questions. 
+        </mat-card-content>
       </mat-card>
+    </div>
+    <h1>Watch the video to learn more about Aphasia</h1>
+    <div>
+        <mat-card class="card" style="padding-bottom: 56.25%;">
+          <iframe [src]='safeURL' frameborder="0" allowfullscreen style="position: absolute;top: 0;left: 0;width:100%;height:100%;"></iframe>
+        </mat-card>
+    </div>
   </div>
 </div>
