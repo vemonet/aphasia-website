@@ -1,7 +1,15 @@
 <div fxLayout="row" fxLayoutAlign="center">
   <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="2.5%">
-    <p>
-      contact works!
-    </p>
+    <mat-card fxLayout="column">
+      <mat-form-field>
+        <input matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Enter your message" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
+      </mat-form-field>
+
+    </mat-card>
   </div>
 </div>
