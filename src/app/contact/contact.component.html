@@ -1,21 +1,30 @@
 <div fxLayout="row" fxLayoutAlign="center">
-  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="3%">
-    <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
-      <mat-card fxLayout="column">
-        <mat-form-field>
-          <input matInput placeholder="Enter your email" formControlName="senderEmail" required>
-          <!-- <mat-error *ngIf="messageForm.senderEmail.invalid">{{getErrorMessage()}}</mat-error> -->
-        </mat-form-field>
-
-        <mat-form-field>
-          <textarea matInput placeholder="Enter your message" formControlName="messageToSend" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
-        </mat-form-field>
-
-        <re-captcha formControlName="recaptchaReactive"></re-captcha>
-
-        <button mat-button [disabled]="messageForm.invalid" type="submit" i18n="messageForm | submit button">Send message</button>
-
-      </mat-card>
-    </form>
+    <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="3%">
+      <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
+        <mat-card fxLayout="column" fxLayoutGap="3%">
+          <mat-card-header fxLayout="column">
+            <mat-card-title style="text-align: center;">
+              <h1>Contact us</h1>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-form-field>
+            <input matInput placeholder="Enter your email" formControlName="senderEmail" required>
+            <!-- <mat-error *ngIf="messageForm.senderEmail.invalid">{{getErrorMessage()}}</mat-error> -->
+          </mat-form-field>
+  
+          <mat-form-field>
+            <textarea matInput placeholder="Enter your message" formControlName="messageToSend" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
+          </mat-form-field>
+  
+          <div fxLayout="row" fxLayoutAlign="center">
+            <re-captcha formControlName="recaptchaReactive"></re-captcha>
+          </div>
+            
+          <div fxLayout="row" fxLayoutAlign="center">
+            <button mat-raised-button [disabled]="messageForm.invalid" type="submit" color="primary" i18n="messageForm | submit button">Send message</button>
+          </div>
+  
+        </mat-card>
+      </form>
+    </div>
   </div>
-</div>

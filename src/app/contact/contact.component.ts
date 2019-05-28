@@ -22,7 +22,6 @@ export class ContactComponent implements OnInit {
   success = false;
 
   public errorMsg;
-  donate = 'I like to support';
 
   contactMessage: string;
   contactEmail: string;
@@ -79,7 +78,7 @@ export class ContactComponent implements OnInit {
   sendMail(){
     const formMessage = this.messageForm.controls.messageToSend.value;
     window.location.href = "mailto:" + this.aphasiaMail + "&subject=Contact%20form&body=Sent by " 
-    + this.messageForm.controls.senderEmail.value + '\n' + formMessage + " - Aphasia contact form";
+    + this.messageForm.controls.senderEmail.value + ' and message: ' + formMessage + " - Aphasia contact form";
   }
 
 
