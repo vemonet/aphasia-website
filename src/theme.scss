@@ -1,41 +1,8 @@
 // Theme
 // mat-palette accepts $palette-name, main, lighter and darker variants
 //$my-theme-primary: mat-palette($mat-blue, 500, 800, 400);
-$aphasia-theme-primary: (
-  50 : #e3f2fd,
-  100 : #bbdefb,
-  200 : #90caf9,
-  300 : #64b5f6,
-  400 : #42a5f5,
-  500 : #318EDE3D,
-  600 : #1e88e5,
-  700 : #1976d2,
-  800 : #1565c0,
-  900 : #0d47a1,
-  A100 : #82b1ff,
-  A200 : #448aff,
-  A400 : #2979ff,
-  A700 : #2962ff,
-  contrast: (
-      50 : #000000,
-      100 : #000000,
-      200 : #000000,
-      300 : #000000,
-      400 : #000000,
-      500 : #000000,
-      600 : #000000,
-      700 : #ffffff,
-      800 : #ffffff,
-      900 : #ffffff,
-      A100 : #000000,
-      A200 : #000000,
-      A400 : #000000,
-      A700 : #000000,
-  )
-);
 
-// $my-theme-primary: mat-palette($mat-light-blue, A100, 800, 400);
-$my-theme-primary: mat-palette($aphasia-theme-primary, 500, 800, 400);
+$my-theme-primary: mat-palette($mat-blue, 100, 800, 400);
 $my-theme-accent: mat-palette($mat-indigo);
 $my-theme-warn: mat-palette($mat-deep-orange, A200);
 
