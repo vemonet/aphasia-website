@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import {MatSnackBar} from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.snackBar.open('This website is a MVP / Prototype. We are working hard on a fully functional product. Feel free to join!', 'OK', {
       duration: 200000,
+      panelClass: ['snackbar-warn-dev']
     });
   }
 
