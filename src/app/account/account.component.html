@@ -5,7 +5,8 @@
       <h1>Please login</h1>
 
       <div fxLayout="row" fxLayoutGap="3%">
-        <mat-card fxFlex="50%" >
+        <a  href="/oauth2/authorization/google">
+        <mat-card >
           <mat-card-header fxLayout="column">
             <mat-card-title>
               <h1>With Google</h1>
@@ -13,10 +14,12 @@
             <mat-card-subtitle>as a patient</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content>
-            <a href="/oauth2/authorization/google" class="m-2"><img src="assets/images/google.svg"></a>
+            <img src="assets/images/google.svg">
           </mat-card-content>
         </mat-card>
-        <mat-card fxFlex="50%">
+        </a>
+        <a href="/oauth2/authorization/orcid">
+        <mat-card >
           <mat-card-header fxLayout="column">
             <mat-card-title>
               <h1>With ORCID</h1>
@@ -24,9 +27,9 @@
             <mat-card-subtitle>as a professional</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content>
-            <a href="/oauth2/authorization/orcid" class="m-2"><img src="assets/images/orcid.png"></a>
+            <img src="assets/images/orcid.png">
           </mat-card-content>
-        </mat-card>
+        </mat-card></a>
       </div>
     </div>
 
