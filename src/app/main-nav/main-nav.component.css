@@ -20,8 +20,9 @@ mat-icon {
   margin-right: 10px;
 }
 
+/* TODO: fix those !important tags */
 span.mat-line {
-  font-weight: 100 !important;
+  font-weight: 400 !important;
   font-size: 20px !important;
 }
 
