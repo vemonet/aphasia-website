@@ -8,6 +8,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
   MatCardModule, MatMenuModule, MatSnackBarModule, MatInputModule } from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RecaptchaModule, RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
+import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +38,8 @@ import { AccountComponent } from './account/account.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
     AppRoutingModule,
     LayoutModule,
     FlexLayoutModule,
@@ -50,7 +54,14 @@ import { AccountComponent } from './account/account.component';
     MatInputModule,
     MatFormFieldModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: {
+        siteKey: '6LcERJ8UAAAAABZ-d7X-Ts1BCbFwT22o9zX-3ro4',
+      } as RecaptchaSettings,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

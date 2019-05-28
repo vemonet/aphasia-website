@@ -1,15 +1,21 @@
 <div fxLayout="row" fxLayoutAlign="center">
-  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="2.5%">
-    <mat-card fxLayout="column">
-      <mat-form-field>
-        <input matInput placeholder="Enter your email" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-      </mat-form-field>
+  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="3%">
+    <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
+      <mat-card fxLayout="column">
+        <mat-form-field>
+          <input matInput placeholder="Enter your email" formControlName="senderEmail" required>
+          <!-- <mat-error *ngIf="messageForm.senderEmail.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
 
-      <mat-form-field>
-        <textarea matInput placeholder="Enter your message" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
-      </mat-form-field>
+        <mat-form-field>
+          <textarea matInput placeholder="Enter your message" formControlName="messageToSend" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
+        </mat-form-field>
 
-    </mat-card>
+        <re-captcha formControlName="recaptchaReactive"></re-captcha>
+
+        <button mat-button [disabled]="messageForm.invalid" type="submit" i18n="messageForm | submit button">Send message</button>
+
+      </mat-card>
+    </form>
   </div>
 </div>
