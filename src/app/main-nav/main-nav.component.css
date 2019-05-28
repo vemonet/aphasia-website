@@ -34,9 +34,3 @@ span.mat-line {
 .flex-spacer {
   flex-grow: 1;
 }
-
-/* Remove special style for links */
-a {
-  text-decoration: none;
-  color: inherit;
-}
