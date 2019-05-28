@@ -48,12 +48,14 @@
       </mat-card-content>
     </mat-card>
     <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="3%">
-      <button mat-raised-button color="primary">
+      <button mat-raised-button color="primary" [ngClass]="{'mat-elevation-z8':hoverJoinus}"
+      (mouseover)="hoverJoinus=true" (mouseout)="hoverJoinus=false">
         <a href="//gitlab.com/dhh---aphasia">
           Join us on Gitlab
         </a>
       </button>
-      <button mat-raised-button color="accent">
+      <button mat-raised-button color="accent" [ngClass]="{'mat-elevation-z8':hoverRequest}"
+      (mouseover)="hoverRequest=true" (mouseout)="hoverRequest=false">
         <a href="docs.gitlab.com/ee/user/project/members/#request-access-to-a-project">
           Request access
         </a>
