@@ -5,31 +5,36 @@
       <h1>Please login</h1>
 
       <div fxLayout="row" fxLayoutGap="3%">
-        <a  href="/oauth2/authorization/google">
-        <mat-card >
-          <mat-card-header fxLayout="column">
-            <mat-card-title>
-              <h1>With Google</h1>
-            </mat-card-title>
-            <mat-card-subtitle>as a patient</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-            <img src="assets/images/google.svg">
-          </mat-card-content>
-        </mat-card>
+        <a href="/oauth2/authorization/google">
+          <mat-card [ngClass]="{'mat-elevation-z8':hoveringGoogle}"
+          (mouseover)="hoveringGoogle=true"
+          (mouseout)="hoveringGoogle=false">
+            <mat-card-header fxLayout="column">
+              <mat-card-title>
+                <h1>With Google</h1>
+              </mat-card-title>
+              <mat-card-subtitle>as a patient</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <img src="assets/images/google.svg">
+            </mat-card-content>
+          </mat-card>
         </a>
         <a href="/oauth2/authorization/orcid">
-        <mat-card >
-          <mat-card-header fxLayout="column">
-            <mat-card-title>
-              <h1>With ORCID</h1>
-            </mat-card-title>
-            <mat-card-subtitle>as a professional</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-            <img src="assets/images/orcid.png">
-          </mat-card-content>
-        </mat-card></a>
+          <mat-card [ngClass]="{'mat-elevation-z8':hoveringOrcid}"
+          (mouseover)="hoveringOrcid=true"
+          (mouseout)="hoveringOrcid=false">
+            <mat-card-header fxLayout="column">
+              <mat-card-title>
+                <h1>With ORCID</h1>
+              </mat-card-title>
+              <mat-card-subtitle>as a professional</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <img src="assets/images/orcid.png">
+            </mat-card-content>
+          </mat-card>
+        </a>
       </div>
     </div>
 
