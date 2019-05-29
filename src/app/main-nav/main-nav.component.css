@@ -21,9 +21,20 @@ mat-icon {
 }
 
 /* TODO: fix those !important tags */
-span.mat-line {
+/* span.mat-line {
   font-weight: 400 !important;
   font-size: 20px !important;
+} */
+
+/* a.mat-button, button.mat-button {
+  font-weight: 100;
+  font-size: 38px;
+  line-height: 38px;
+} */
+.mat-icon {
+  height: inherit;
+  width: inherit;
+  font-size: 38px;
 }
 
 .nav-aphasia-logo {
