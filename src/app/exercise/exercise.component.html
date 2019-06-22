@@ -3,13 +3,25 @@
     <div>
       <mat-card class="card">
         <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-          <h1>Aphasia adaptative exercise</h1>
+          <h1>Aphasia adaptative exercises</h1>
         </mat-card-title>
         <mat-card-content style="text-align: center;">
           {{ exerciseText }}
           <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2.5%" style="margin-top: 50px; margin-bottom: 50px; font-size: 50px;">
-            <a href="exercise/thumbsup"><mat-icon mat-list-icon color="accent" inline="true">thumb_up</mat-icon></a>
-            <a href="exercise/thumbsdown"><mat-icon mat-list-icon color="accent" inline="true">thumb_down</mat-icon></a>
+            <a href="exercise/thumbsup">
+              <mat-card [ngClass]="{'mat-elevation-z8':hoveringUp}"
+                (mouseover)="hoveringUp=true"
+                (mouseout)="hoveringUp=false">
+                <mat-icon mat-list-icon color="accent" inline="true">thumb_up</mat-icon>
+              </mat-card>
+            </a>
+            <a href="exercise/thumbsdown">
+              <mat-card [ngClass]="{'mat-elevation-z8':hoveringDown}"
+                (mouseover)="hoveringDown=true"
+                (mouseout)="hoveringDown=false">
+                <mat-icon mat-list-icon color="accent" inline="true">thumb_down</mat-icon>
+              </mat-card>
+            </a>
           </div>
         </mat-card-content>
       </mat-card>
