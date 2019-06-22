@@ -39,18 +39,21 @@
   </a>
 </mat-toolbar>
   
-
-<!--<mat-sidenav-container class="sidenav-container">
+<!-- With dynamic side navbar -->
+<!-- <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="false">
-      <!-- [opened]="!(isHandset$ | async)" --
+      [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/" i18n="navigation | home button@@homeButton">
         <mat-icon mat-list-icon>home</mat-icon>
         <span mat-line>Home</span>
+      </a>
+      <a mat-list-item routerLink="/exercise" aria-label="Exercise">
+        <mat-icon mat-list-icon>school</mat-icon>
+        <span mat-line>Exercises</span>
       </a>
       <a mat-list-item routerLink="/about" i18n="navigation | about button@@aboutButton">
         <mat-icon mat-list-icon>info</mat-icon>
@@ -80,14 +83,12 @@
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
-        (click)="drawer.toggle()">
-        <!-- *ngIf="isHandset$ | async" --
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>aphasia.help</span>
     </mat-toolbar>
-    <!-- To be able to put the content in <app-main-nav> in app.component.html --
     <ng-content></ng-content>
-    <app-footer class="mat-typography" fxFlexOffset="auto"></app-footer>
   </mat-sidenav-content>
-</mat-sidenav-container>-->
+</mat-sidenav-container> -->
