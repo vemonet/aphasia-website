@@ -20,6 +20,7 @@ import { DonateComponent } from './donate/donate.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccountComponent } from './account/account.component';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AccountComponent } from './account/account.component';
     DonateComponent,
     ContactComponent,
     FooterComponent,
-    AccountComponent
+    AccountComponent,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,

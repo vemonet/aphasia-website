@@ -1,0 +1,18 @@
+<div fxLayout="row" fxLayoutAlign="center">
+  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="2.5%">
+    <div>
+      <mat-card class="card">
+        <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+          <h1>Aphasia adaptative exercise</h1>
+        </mat-card-title>
+        <mat-card-content style="text-align: center;">
+          {{ exerciseText }}
+          <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2.5%" style="margin-top: 50px; margin-bottom: 50px; font-size: 50px;">
+            <a href="exercise/thumbsup"><mat-icon mat-list-icon color="accent" inline="true">thumb_up</mat-icon></a>
+            <a href="exercise/thumbsdown"><mat-icon mat-list-icon color="accent" inline="true">thumb_down</mat-icon></a>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
