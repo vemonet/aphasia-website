@@ -18,13 +18,17 @@
     More
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/contact" aria-label="Contact">
-      <mat-icon mat-list-icon>email</mat-icon>
-      Contact
+    <button mat-menu-item aria-label="Contact">
+      <a href="contact">
+        <mat-icon mat-list-icon>email</mat-icon>
+        <span mat-h1>Contact</span>
+      </a>
     </button>
-    <button mat-menu-item routerLink="/donate" aria-label="Donate">
-      <mat-icon mat-list-icon>monetization_on</mat-icon>
-      Donate
+    <button mat-menu-item aria-label="Donate">
+      <a href="donate">
+        <mat-icon mat-list-icon>monetization_on</mat-icon>
+        <span mat-h1>Donate</span>
+      </a>
     </button>
     <button mat-menu-item aria-label="API">
       <a href="/swagger-ui.html">
