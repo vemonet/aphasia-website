@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
   MatCardModule, MatMenuModule, MatSnackBarModule, MatInputModule } from '@angular/material';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { RecaptchaModule, RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 
@@ -54,7 +55,8 @@ import { ExerciseComponent } from './exercise/exercise.component';
     MatMenuModule,
     MatSnackBarModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [
     {
@@ -64,6 +66,7 @@ import { ExerciseComponent } from './exercise/exercise.component';
       } as RecaptchaSettings,
     }
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

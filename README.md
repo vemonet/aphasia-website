@@ -1,27 +1,36 @@
-# AphasiaWebsite
+# Aphasia website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8. Using [Material Design](https://material.angular.io/)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```shell
+ng serve
+```
 
-## Code scaffolding
+* Navigate to [http://localhost:4200/](http://localhost:4200/)
+* The app should automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Generate new components
+
+```shell
+ng generate component the-component-name
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```shell
+ng build --prod
 
-## Running unit tests
+docker build -t aphasia-website .
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# TODO: not working
+docker run -it -p 80:8080 --network bridge \
+  -e "DB_HOST=postgres" -e "DB_PORT=5432" \
+  -e "GOOGLE_CLIENT_ID=9999999.apps.googleusercontent.com" \
+  -e "GOOGLE_CLIENT_SECRET=my_secret" \
+  -e "ORCID_CLIENT_ID=APP-AAAA99" \
+  -e "ORCID_CLIENT_SECRET=my_uuid" \
+  -e "ORCID_CLIENT_REDIRECT_URI=http://localhost/login/oauth2/code/orcid" \
+  aphasia-website
+```
