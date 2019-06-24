@@ -1,30 +1,36 @@
-<div fxLayout="row" fxLayoutAlign="center">
-    <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="3%">
-      <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
-        <mat-card fxLayout="column" fxLayoutGap="3%" class="mat-elevation-z2">
-          <mat-card-header fxLayout="column">
-            <mat-card-title style="text-align: center;">
-              <h1>Contact us</h1>
-            </mat-card-title>
-          </mat-card-header>
-          <mat-form-field>
-            <input matInput placeholder="Enter your email" formControlName="senderEmail" required>
-            <!-- <mat-error *ngIf="messageForm.senderEmail.invalid">{{getErrorMessage()}}</mat-error> -->
-          </mat-form-field>
-  
-          <mat-form-field>
-            <textarea matInput placeholder="Enter your message" formControlName="messageToSend" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
-          </mat-form-field>
-  
-          <div fxLayout="row" fxLayoutAlign="center">
-            <re-captcha formControlName="recaptchaReactive"></re-captcha>
-          </div>
-            
-          <div fxLayout="row" fxLayoutAlign="center">
-            <button mat-raised-button [disabled]="messageForm.invalid" type="submit" color="primary" i18n="messageForm | submit button">Send message</button>
-          </div>
-  
-        </mat-card>
-      </form>
+<div class="container justify-content-center">
+    <div class="row">
+      <div class="col">
+        <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
+          <mdb-card class="my-5">
+              <mdb-card-body>
+                <mdb-card-title>
+                  <h1>Contact us</h1>
+                </mdb-card-title>
+                <mdb-card-content>
+                  <div class="row">
+                    <mat-form-field>
+                      <input matInput placeholder="Enter your email" formControlName="senderEmail" required>
+                      <!-- <mat-error *ngIf="messageForm.senderEmail.invalid">{{getErrorMessage()}}</mat-error> -->
+                    </mat-form-field>
+                  </div>
+                  
+                  <div class="row">
+                    <mat-form-field>
+                      <textarea matInput placeholder="Enter your message" formControlName="messageToSend" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
+                    </mat-form-field>
+                  </div>
+                  <div class="row justify-content-center mb-5">
+                    <re-captcha formControlName="recaptchaReactive"></re-captcha>
+                  </div>
+                    
+                  <div class="row justify-content-center mb-5">
+                    <button mat-raised-button [disabled]="messageForm.invalid" type="submit" color="primary" i18n="messageForm | submit button">Send message</button>
+                  </div>
+                </mdb-card-content>
+              </mdb-card-body>
+            </mdb-card>
+        </form>
+      </div>
     </div>
   </div>
