@@ -1,6 +1,6 @@
 # Aphasia website
 
-Generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8. Using [Material Design](https://material.angular.io/)
+Generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8. Redesign of [Rik](https://gitlab.com/Theunissen) website https://gitlab.com/dhh---aphasia/website using [Material Design](https://material.angular.io/).
 
 ## Development server
 
