@@ -1,66 +1,62 @@
-<div fxLayout="row" fxLayoutAlign="center">
-  <div class="container"  fxLayout="column" fxFlex="70%" fxFlex.xs="100%" fxLayoutWrap fxLayoutGap="3%" style="text-align: center;">
-    <h1>Foundation Aphasia Help</h1>
+<div class="container justify-content-center">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="my-5">Foundation Aphasia Help</h1>
 
-    <div fxLayout="row" fxLayoutGap="3%" style="text-align: center;">
-      <mat-card fxFlex="50%" class="mat-elevation-z2">
-        <mat-card-header fxLayout="column">
-          <mat-card-title>
-            <h1>One team</h1>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <img class="img" src="/assets/images/team.png" alt="the team" height="240px"> 
-        </mat-card-content>
-      </mat-card>
-      <mat-card fxFlex="50%" class="mat-elevation-z2">
-        <mat-card-header fxLayout="column">
-          <mat-card-title>
-            <h1>One mission</h1>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            The Mission of Aphasia Help is to promote public awareness and understanding of aphasia and provide support to all persons with aphasia and their caregivers.
+      <div class="row">
+        <div class="col-6">
+          <mdb-card>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h1>One team</h1>
+              </mdb-card-title>
+              <mdb-card-content>
+                <img class="img" src="/assets/images/team.png" alt="the team" height="240px"> 
+              </mdb-card-content>
+            </mdb-card-body>
+          </mdb-card>
+        </div>
+        <div class="col-6">
+          <mdb-card>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h1>One mission</h1>
+              </mdb-card-title>
+              <mdb-card-content>
+                <p>
+                  The Mission of Aphasia Help is to promote public awareness and understanding of aphasia and provide support to all persons with aphasia and their caregivers.
 
-            The ApHe envisions a society in which aphasia is a commonly understood word and where all persons with aphasia, regardless of individual differences,
-            their families, health professionals, and the public have access to appropriate education and resources that would enhance their potential 
-            for an acceptable quality of life.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <mat-card fxLayout="column" style="text-align: center;" class="mat-elevation-z2">
-      <mat-card-header fxLayout="column">
-        <mat-card-title>
-          <h1>Developed with and by the <b>Open Source</b> community</h1>
-        </mat-card-title>
-      </mat-card-header>
-      <mat-card-content fxLayout="row" fxLayoutAlign="center" fxLayoutGap="3%">
-        <a href="//angularjs.org" class="m-2 text-secondary"><img src="/assets/images/angular.png" height="75px"></a>
-        <a href="//swagger.io" class="m-2 text-secondary"><img src="/assets/images/swagger.png" height="75px"></a>
-        <a href="//openapis.org" class="m-2 text-secondary"><img src="/assets/images/oai.png" height="75px"></a>
-        <a href="//spring.io" class="m-2 text-secondary"><img src="/assets/images/spring.png" height="75px"></a>
-        <a href="//www.postgresql.org" class="m-2 text-secondary"><img src="/assets/images/Postgresql.png" height="75px"></a>
-        <a href="//gitlab.io" class="m-2 text-secondary"><img src="/assets/images/gitlab.png" height="75px"></a>
-        <a href="//docker.io" class="m-2 text-secondary"><img src="/assets/images/docker.png" height="75px"></a>
-      </mat-card-content>
-    </mat-card>
-    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="3%">
-      <button mat-raised-button color="primary" [ngClass]="{'mat-elevation-z8':hoverJoinus}"
-      (mouseover)="hoverJoinus=true" (mouseout)="hoverJoinus=false">
-        <a href="//gitlab.com/dhh---aphasia">
-          Join us on Gitlab
-        </a>
-      </button>
-      <button mat-raised-button color="accent" [ngClass]="{'mat-elevation-z8':hoverRequest}"
-      (mouseover)="hoverRequest=true" (mouseout)="hoverRequest=false">
-        <a href="docs.gitlab.com/ee/user/project/members/#request-access-to-a-project">
-          Request access
-        </a>
-      </button>
-    </div>
-
+                  The ApHe envisions a society in which aphasia is a commonly understood word and where all persons with aphasia, regardless of individual differences,
+                  their families, health professionals, and the public have access to appropriate education and resources that would enhance their potential 
+                  for an acceptable quality of life.
+                </p>
+              </mdb-card-content>
+            </mdb-card-body>
+          </mdb-card>
+        </div>
+      </div>
+      <div class="row justify-content-center my-5">
+        <mdb-card>
+          <mdb-card-body>
+            <mdb-card-title>
+              <h1>Developed with and by the <b>Open Source</b> community</h1>
+            </mdb-card-title>
+            <mdb-card-content>
+              <a href="//angularjs.org" class="m-2 text-secondary"><img src="/assets/images/angular.png" height="75px"></a>
+              <a href="//swagger.io" class="m-2 text-secondary"><img src="/assets/images/swagger.png" height="75px"></a>
+              <a href="//openapis.org" class="m-2 text-secondary"><img src="/assets/images/oai.png" height="75px"></a>
+              <a href="//spring.io" class="m-2 text-secondary"><img src="/assets/images/spring.png" height="75px"></a>
+              <a href="//www.postgresql.org" class="m-2 text-secondary"><img src="/assets/images/Postgresql.png" height="75px"></a>
+              <a href="//gitlab.io" class="m-2 text-secondary"><img src="/assets/images/gitlab.png" height="75px"></a>
+              <a href="//docker.io" class="m-2 text-secondary"><img src="/assets/images/docker.png" height="75px"></a>
+            </mdb-card-content>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+      <div class="row justify-content-center">
+        <a href="//gitlab.com/dhh---aphasia" mdbBtn color="primary" mdbWavesEffect>Join us on GitLab</a>
+        <a href="docs.gitlab.com/ee/user/project/members/#request-access-to-a-project" mdbBtn color="accent" mdbWavesEffect>Request access</a>
+      </div>
+    </div>    
   </div>
 </div>
