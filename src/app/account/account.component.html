@@ -1,12 +1,13 @@
-<div fxLayout="row" fxLayoutAlign="center">
-  <div class="container"  fxLayout="column" fxLayoutGap="3%">
+<div class="container justify-content-center">
+    <div class="row">
+      <div class="col text-center">
     <!-- <img src="/assets/images/logo_AphasiaHelp.png" alt=""  height="60%" width="60%"> -->
     <div *ngIf="user.id === undefined" style="text-align: center;">
-      <h1>Please login</h1>
+      <h1 class="my-4">Please login</h1>
 
-      <div fxLayout="row" fxLayoutGap="3%">
+      <div class="row justify-content-center">
         <a href="/oauth2/authorization/google">
-          <mat-card [ngClass]="{'mat-elevation-z8':hoveringGoogle}"
+          <mat-card class="mr-5" [ngClass]="{'mat-elevation-z8':hoveringGoogle}"
           (mouseover)="hoveringGoogle=true"
           (mouseout)="hoveringGoogle=false">
             <mat-card-header fxLayout="column">
@@ -74,4 +75,5 @@
       </mat-card>          
     </div>
   </div>
+</div>
 </div>
