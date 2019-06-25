@@ -17,6 +17,13 @@ body {
     margin: 0;
 }
 
+.card {
+  font-weight: inherit;
+}
+.card .card-body h1 {
+  font-weight: inherit;
+}
+
 /* Remove special style for links in buttons */
 // button a {
 //   text-decoration: none;
