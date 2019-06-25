@@ -39,10 +39,10 @@
       </div>
     </div>
 
-    <div *ngIf="user.id !== undefined" fxLayout="column" fxLayoutGap="3%">
-    <!-- <div fxLayout="column" fxLayoutGap="3%"> -->
-      <a href="/logout" mat-raised-button color="warn">Logout</a>
-        <mat-card>
+    <div *ngIf="user.id !== undefined" class="col">
+      <!-- <a href="/logout" mat-raised-button color="warn" class="my-4">Logout</a> -->
+      <a href="/logout" mdbBtn color="warning" class="my-4" mdbWavesEffect>Logout</a>
+      <mdb-card>
         <mat-list>
           <mat-list-item>
             <mat-icon mat-list-icon>person</mat-icon>
@@ -72,7 +72,7 @@
             <h2 mat-line>{{user.oidProvider}}</h2>
           </mat-list-item>
         </mat-list>
-      </mat-card>          
+      </mdb-card>        
     </div>
   </div>
 </div>
