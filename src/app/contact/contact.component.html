@@ -8,15 +8,15 @@
                   <h1>Contact us</h1>
                 </mdb-card-title>
                 <mdb-card-content>
-                  <div class="row">
-                    <mat-form-field>
+                  <div class="row mx-5">
+                    <mat-form-field class="col">
                       <input matInput placeholder="Enter your email" formControlName="senderEmail" required>
                       <!-- <mat-error *ngIf="messageForm.senderEmail.invalid">{{getErrorMessage()}}</mat-error> -->
                     </mat-form-field>
                   </div>
                   
-                  <div class="row">
-                    <mat-form-field>
+                  <div class="row mx-5">
+                    <mat-form-field class="col">
                       <textarea matInput placeholder="Enter your message" formControlName="messageToSend" matTextareaAutosize matAutosizeMinRows=3 matAutosizeMaxRows=20></textarea>
                     </mat-form-field>
                   </div>
@@ -25,7 +25,8 @@
                   </div>
                     
                   <div class="row justify-content-center mb-5">
-                    <button mat-raised-button [disabled]="messageForm.invalid" type="submit" color="primary" i18n="messageForm | submit button">Send message</button>
+                    <button mdbBtn mdbWavesEffect [disabled]="messageForm.invalid" type="submit" color="primary" i18n="messageForm | submit button">Send message</button>
+                    <!-- <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a> -->
                   </div>
                 </mdb-card-content>
               </mdb-card-body>
