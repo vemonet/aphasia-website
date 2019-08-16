@@ -5,6 +5,7 @@ Generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3
 ## Development server
 
 ```shell
+npm install 
 ng serve
 ```
 
